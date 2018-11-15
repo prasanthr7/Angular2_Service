@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {RouterModule} from '@angular/router';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { SessionDataService } from './session-data.service';
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -10,7 +10,7 @@ describe('AppComponent', () => {
         AppComponent
       ],
       providers:[SessionDataService],
-      schemas:[CUSTOM_ELEMENTS_SCHEMA]
+      schemas:[CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA]
     }).compileComponents();
   }));
   it('should create the app', async(() => {

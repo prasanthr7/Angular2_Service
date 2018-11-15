@@ -1,6 +1,10 @@
 <h1>This is block 1</h1>
+<h2>{{message}}</h2>
 <div *ngIf="!serviceError">
     <h2>{{data}}</h2>
+</div>
+<div>
+    {{isLoaded}}
 </div>
 <div *ngIf="serviceError">
     <span>Service failed</span>
